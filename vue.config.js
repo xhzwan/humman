@@ -39,7 +39,8 @@ module.exports = {
 
     proxy: {
       "/api": {
-        target: "http://ihrm.itheima.net/",
+        // target: "http://ihrm.itheima.net/",
+        target: 'http://localhost:8080',
         changeOrigin: true,
         // 重写路径
         // pathRwrite:{}
