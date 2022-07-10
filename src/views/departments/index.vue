@@ -70,6 +70,7 @@ export default {
       const res = await getDepartments();
       this.company = { name: res.companyName, manager: "负责人", id: "" };
       this.departs = tranListToTreeData(res.depts, "");
+      console.log(this.departs);
       this.loading = false;
     },
     async delDepart(id) {
